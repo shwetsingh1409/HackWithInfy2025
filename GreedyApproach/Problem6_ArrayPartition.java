@@ -9,17 +9,17 @@ public class Problem6_ArrayPartition {
 
         System.out.println("Enter no. of pairs");
         int n = sc.nextInt();
-        int[] nums = new int[n*2];
+        int[] nums = new int[n];
 
-        System.out.println("Enter " + (2 * n) + " numbers:");
-        for (int i = 0; i < 2 * n; i++) {
+        System.out.println("Enter " + (n) + " numbers:");
+        for (int i = 0; i < n; i++) {
             nums[i] = sc.nextInt();
         }
 
         Arrays.sort(nums);
 
         int sum = 0;
-        for (int i = 0; i < 2 * n; i += 2) {
+        for (int i = 0; i < n; i += 2) {
             sum += nums[i]; 
         }
 
